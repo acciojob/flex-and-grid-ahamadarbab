@@ -1,1 +1,50 @@
 /*  your css code here. If applicable */
+body {
+	margin: 0;
+	font-family: Arial, sans-serif;
+	background-color: #f2f2f2;
+}
+
+.cards-wrapper {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 30px;
+	padding: 40px;
+}
+
+.card {
+	position: relative;
+	border:10px solid #ccc;
+	background-color: #fafafa;
+	border-radius: 20px;
+	padding: 20px;
+	height: 300px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+
+.number {
+	position: absolute;
+	top: -40px;
+	left: 10px;
+	font-size: 25px;
+}
+
+.card-content {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.card h1 {
+	font-size: 1.5em;
+	margin: 0;
+}
+
+.card p {
+	font-size: 0.75em;
+	margin: 0;
+	color: #555;
+}
